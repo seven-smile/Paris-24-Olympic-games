@@ -1,0 +1,495 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:Annotation.AnnotationText="UPTF00000088eyI8SGVscExpbms+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8SW5pdGlhbFRvb2x0aXA+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8VmVyc2lvbj5rX19CYWNraW5nRmllbGQiOjF9" sap:VirtualizedContainerService.HintSize="1386,4922" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>Newtonsoft.Json</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>UiPath.Vision.OCR</x:String>
+      <x:String>UiPath.OCR.Contracts</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.OCR.Activities</x:String>
+      <x:String>UiPath.OCR.Contracts.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.Numerics</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>netstandard</AssemblyReference>
+      <AssemblyReference>Newtonsoft.Json</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1396,4857" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="SummaryDataTable" />
+      <Variable x:TypeArguments="x:String" Name="jsonString" />
+      <Variable x:TypeArguments="x:String" Name="textFilePath" />
+      <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="DetailedDataTable" />
+      <Variable x:TypeArguments="x:Int32" Name="Counter">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:Int32" />
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="x:String" Name="CurrentText" />
+      <Variable x:TypeArguments="x:String" Name="dtText" />
+      <Variable x:TypeArguments="x:Int32" Name="IteratorCount">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:Int32" Value="1" />
+        </Variable.Default>
+      </Variable>
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Assign sap:VirtualizedContainerService.HintSize="1334,123" sap2010:WorkflowViewState.IdRef="Assign_5">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[textFilePath]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">["summaryJson.txt"]</InArgument>
+      </Assign.Value>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </Assign>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: Paris 2024 Official Ticketing - Select sessions" sap:VirtualizedContainerService.HintSize="1334,2926" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="31dc0033-9034-4ae0-bc9b-e869f6b341a5" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1300,2668" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[SummaryDataTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Event'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column3' Name='Description'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column4' Name='Date'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column5' Name='Time'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column6' Name='Venue'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column7' Name='Pricing'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='product-item' /&gt;&lt;webctrl tag='listing-item' idx='1' /&gt;&lt;webctrl tag='article' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='product-item' /&gt;&lt;webctrl tag='listing-item' idx='1' /&gt;&lt;webctrl tag='article' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column3' attr='fulltext'&gt;&lt;webctrl tag='product-item' /&gt;&lt;webctrl tag='listing-item' idx='1' /&gt;&lt;webctrl tag='article' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column4' attr='fulltext'&gt;&lt;webctrl tag='product-item' /&gt;&lt;webctrl tag='listing-item' idx='1' /&gt;&lt;webctrl tag='article' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column5' attr='fulltext'&gt;&lt;webctrl tag='product-item' /&gt;&lt;webctrl tag='listing-item' idx='1' /&gt;&lt;webctrl tag='article' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='span' idx='2' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column6' attr='fulltext'&gt;&lt;webctrl tag='product-item' /&gt;&lt;webctrl tag='listing-item' idx='1' /&gt;&lt;webctrl tag='article' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='span' idx='3' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column7' attr='fulltext'&gt;&lt;webctrl tag='product-item' /&gt;&lt;webctrl tag='listing-item' idx='1' /&gt;&lt;webctrl tag='article' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='listing-cta' idx='1' /&gt;&lt;webctrl tag='p24-listing-cta' idx='1' /&gt;&lt;webctrl tag='event-status' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="1238,198" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="31dc0033-9034-4ae0-bc9b-e869f6b341a5" Version="V3">
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable BrowserURL="https://tickets.paris2024.org/en/search/?affiliate=24R" DesignTimeRectangle="341, 1222, 1240, 3550" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl aria-role='list' tag='DIV' /&gt;" Guid="b022686f-6897-425b-856f-a090831c31e9" InformativeScreenshot="505e7b5771ab1e6935c3d0bf27c081aa.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Paris 2024 Official Ticketing - Select sessions' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+              </uix:NExtractData.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NExtractData>
+            <ui:InterruptibleWhile CurrentIndex="{x:Null}" DisplayName="While" sap:VirtualizedContainerService.HintSize="1238,2213" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+              <ui:InterruptibleWhile.Body>
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1204,2058" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[SummaryDataTable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1142,1546" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
+                    <ui:ForEachRow.Body>
+                      <ActivityAction x:TypeArguments="sd:DataRow">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                        </ActivityAction.Argument>
+                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1108,1340" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'FootballFBL02 M'" sap:VirtualizedContainerService.HintSize="1046,198" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="31dc0033-9034-4ae0-bc9b-e869f6b341a5" Timeout="5" Version="V3">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="https://tickets.paris2024.org/en/search/?affiliate=24R" DesignTimeRectangle="341, 522, 1240, 168" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl parentid='list-item-0' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='list-item-0' tag='DIV' type='' class='listing-item theme-text-color listing-item-clickable' aaname='' check:innerText='Football&amp;#xD;&amp;#xA;FBL02 M - Argentina vs Morocco group stage Scheduled events (subject to change): Men&amp;apos;s' /&gt;" Guid="9e3ebd04-ad9c-4bec-a7df-3c56077ab224" ImageBase64="" InformativeScreenshot="38ff6903242210786defcaca218072b7.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Paris 2024 Official Ticketing - Select sessions' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+                            </uix:NClick.Target>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </uix:NClick>
+                          <uix:NCheckState DisplayName="Check App State 'Paris 2024'" sap:VirtualizedContainerService.HintSize="1046,1057" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="31dc0033-9034-4ae0-bc9b-e869f6b341a5" Timeout="3" Version="V3">
+                            <uix:NCheckState.IfExists>
+                              <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="496,396" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'close'" sap:VirtualizedContainerService.HintSize="434,198" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="31dc0033-9034-4ae0-bc9b-e869f6b341a5" Version="V3">
+                                  <uix:NClick.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://tickets.paris2024.org/en/search/?affiliate=24R&amp;page=7" CvElementArea="1290, 141, 41, 34" CvType="CloseButton" DesignTimeRectangle="1304, 153, 14, 14" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;serp-modal&amp;gt;div&amp;gt;button&amp;gt;i' isleaf='1' tag='I' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' isleaf='1' tag='I' class='icon icon-cross' aaname='' /&gt;" Guid="6b9ce12b-b4b8-45c7-a31c-92fb97b6cb23" InformativeScreenshot="7077addb06f913ef18139d18e35ba27e.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Paris 2024 Official Ticketing - Select sessions' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                      <uix:TargetAnchorable.Anchors>
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                          <uix:Target CvElementArea="1290, 141, 41, 34" CvType="CloseButton" DesignTimeRectangle="1290, 139, 42, 42" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='close' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='close' tag='BUTTON' type='' class='basic-btn p-basic-btn p-modal-close' check:innerText='close' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                        </scg:List>
+                                      </uix:TargetAnchorable.Anchors>
+                                    </uix:TargetAnchorable>
+                                  </uix:NClick.Target>
+                                </uix:NClick>
+                                <Assign sap:VirtualizedContainerService.HintSize="434,108" sap2010:WorkflowViewState.IdRef="Assign_10">
+                                  <Assign.To>
+                                    <OutArgument x:TypeArguments="x:Int32">[Counter]</OutArgument>
+                                  </Assign.To>
+                                  <Assign.Value>
+                                    <InArgument x:TypeArguments="x:Int32">[Counter + 1]</InArgument>
+                                  </Assign.Value>
+                                </Assign>
+                              </Sequence>
+                            </uix:NCheckState.IfExists>
+                            <uix:NCheckState.IfNotExists>
+                              <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="496,815" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[DetailedDataTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Ticket Category'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='type of category'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column2' Name='Price'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column3' Name='Accessibility'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column4' Name='Accessibility Price'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column5' Name='Accessibility Availability'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column6' Name='Accessible Companion'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column7' Name='Companion Price'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column8' Name='Companion Availability'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column9' Name='Wheelchair'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column10' Name='Wheelchair Price'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column12' Name='Wheelchair Companion'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column13' Name='Wheelchair Companion Price'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='form' idx='1' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='form' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column1' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='form' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column2' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='form' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column3' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='form' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column4' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='form' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column5' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='form' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column6' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='form' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column7' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='form' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column8' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='form' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column9' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='form' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column10' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='form' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column12' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='form' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='4' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column13' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='form' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='4' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="434,198" sap2010:WorkflowViewState.IdRef="NExtractData_3" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="31dc0033-9034-4ae0-bc9b-e869f6b341a5" Version="V3">
+                                  <uix:NExtractData.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://tickets.paris2024.org/en/event/football-parc-des-princes-18148611/?affiliate=24R" DesignTimeRectangle="341, 464, 1240, 1146" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl class='js-cat-check' parentid='bestseat-tab' tag='DIV' /&gt;" Guid="fc399962-7980-41a7-91cb-187a8e11796a" InformativeScreenshot="55a2e661bcab77b0e4db86d7eeaf2943.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Paris 2024 Official Ticketing - Football | 24.07.2024 15:00 | Parc des Princes PARIS' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+                                  </uix:NExtractData.Target>
+                                </uix:NExtractData>
+                                <ui:OutputDataTable DataTable="[DetailedDataTable]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="434,121" sap2010:WorkflowViewState.IdRef="OutputDataTable_1" Text="[CurrentText]" />
+                                <ui:AppendLine File="{x:Null}" DisplayName="Append Line" FileName="DetailedInfo.txt" sap:VirtualizedContainerService.HintSize="434,175" sap2010:WorkflowViewState.IdRef="AppendLine_1" Text="[CurrentText]" UseDefaultEncoding="False" />
+                                <uix:NNavigateBrowser DisplayName="Navigate Browser - Go Back" sap:VirtualizedContainerService.HintSize="434,123" sap2010:WorkflowViewState.IdRef="NNavigateBrowser_1" Version="V3" />
+                                <Assign sap:VirtualizedContainerService.HintSize="434,108" sap2010:WorkflowViewState.IdRef="Assign_7">
+                                  <Assign.To>
+                                    <OutArgument x:TypeArguments="x:Int32">[Counter]</OutArgument>
+                                  </Assign.To>
+                                  <Assign.Value>
+                                    <InArgument x:TypeArguments="x:Int32">[Counter + 1]</InArgument>
+                                  </Assign.Value>
+                                </Assign>
+                              </Sequence>
+                            </uix:NCheckState.IfNotExists>
+                            <uix:NCheckState.Target>
+                              <uix:TargetAnchorable BrowserURL="https://tickets.paris2024.org/en/search/?affiliate=24R&amp;page=7" DesignTimeRectangle="604, 193, 728, 340" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl class='p-card' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='p-card' tag='DIV' type='' aaname='' check:innerText='PARIS 2024 HOSPITALITY PACKAGES&amp;#xD;&amp;#xA;By clicking below, you will be redirected to the Paris 2024' /&gt;" Guid="bf2285f5-ba5e-4208-96d6-7551900a78fc" InformativeScreenshot="58b43fe0bec4ae0e66aff6edb8474559.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Paris 2024 Official Ticketing - Select sessions' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                    <uix:Target CvTextArea="678, 456, 200, 18" CvTextArgument="Co to Tickets + Hospitality" CvType="Text" DesignTimeRectangle="664, 443, 288, 42" FullSelectorArgument="&lt;webctrl parentid='redirect-link-event-cta' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='redirect-link-event-cta' tag='SPAN' type='' class='p-pill' aaname='' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NCheckState.Target>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </uix:NCheckState>
+                        </Sequence>
+                      </ActivityAction>
+                    </ui:ForEachRow.Body>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:ForEachRow>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'A /en/search/?affiliate…'" sap:VirtualizedContainerService.HintSize="1142,198" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="31dc0033-9034-4ae0-bc9b-e869f6b341a5" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://tickets.paris2024.org/en/search/?affiliate=24R" DesignTimeRectangle="1176, 409, 20, 20" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;main&amp;gt;section&amp;gt;serp-widget&amp;gt;search-results&amp;gt;div&amp;gt;product-listing&amp;gt;listing-pagination&amp;gt;nav&amp;gt;ul&amp;gt;pagination-item&amp;gt;a&amp;gt;i' parentid='searchapiwidget' tag='I' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='searchapiwidget' tag='I' class='icon icon-arrow-right' aaname='' /&gt;" Guid="5f844f7a-fc3d-4cd1-ab67-5d39b5375ff0" InformativeScreenshot="2463090b661495c5226beba3e31baddf.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Paris 2024 Official Ticketing - Select sessions' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <uix:Target DesignTimeRectangle="1165, 398, 42, 42" FullSelectorArgument="&lt;webctrl aria-label='Next page' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='Next page' tag='A' type='' class='btn btn-lg btn-square theme-button-radius theme-interaction-border theme-text-light-color theme-alt-interaction-color theme-alt-interaction-color-hover' aaname='Next page' /&gt;" SearchSteps="FuzzySelector" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uix:NClick>
+                  <Assign sap:VirtualizedContainerService.HintSize="1142,123" sap2010:WorkflowViewState.IdRef="Assign_8">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:Int32">[IteratorCount]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:Int32">[IteratorCount + 1]</InArgument>
+                    </Assign.Value>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Assign>
+                  <Assign sap:VirtualizedContainerService.HintSize="1142,106" sap2010:WorkflowViewState.IdRef="Assign_9">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:Int32">[Counter]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:Int32">0</InArgument>
+                    </Assign.Value>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Assign>
+                </Sequence>
+              </ui:InterruptibleWhile.Body>
+              <ui:InterruptibleWhile.Condition>
+                <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="IteratorCount &lt;= 8" />
+              </ui:InterruptibleWhile.Condition>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:InterruptibleWhile>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1238,170" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="[UiPath.Core.Activities.LogLevel.Warn]" Message="[&quot;Scraping Done!&quot;]">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:LogMessage>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1048" BrowserType="Edge" IconBase64="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" InformativeScreenshot="52460e2705d7d9e76c2eb872ae1cf741.jpg" Selector="&lt;html app='msedge.exe' title='Paris 2024 Official Ticketing - Select sessions' /&gt;" Title="Paris 2024 Official Ticketing - Select sessions" Url="https://tickets.paris2024.org/en/search/?affiliate=24R" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+    <ui:ReadTextFile File="{x:Null}" Content="[dtText]" DisplayName="Read Text File" FileName="DetailedInfo.txt" sap:VirtualizedContainerService.HintSize="1334,121" sap2010:WorkflowViewState.IdRef="ReadTextFile_1" />
+    <ui:GenerateDataTable ColumnSizes="{x:Null}" NewLineSeparator="{x:Null}" Positions="{x:Null}" CSVParsing="True" ColumnSeparators="," DataTable="[DetailedDataTable]" DisplayName="Generate Data Table From Text" sap:VirtualizedContainerService.HintSize="1334,243" sap2010:WorkflowViewState.IdRef="GenerateDataTable_1" Input="[dtText]" UseColumnHeader="True" />
+    <ui:FilterDataTable DataTable="[DetailedDataTable]" DisplayName="Filter Data Table" FilterRowsMode="Remove" sap:VirtualizedContainerService.HintSize="1334,203" sap2010:WorkflowViewState.IdRef="FilterDataTable_1" OutputDataTable="[DetailedDataTable]" SelectColumnsMode="Remove">
+      <ui:FilterDataTable.Filters>
+        <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
+          <ui:FilterOperationArgument BooleanOperator="And" Operator="EQ">
+            <ui:FilterOperationArgument.Column>
+              <InArgument x:TypeArguments="x:String">["Ticket Category"]</InArgument>
+            </ui:FilterOperationArgument.Column>
+            <ui:FilterOperationArgument.Operand>
+              <InArgument x:TypeArguments="x:String">["Ticket Category"]</InArgument>
+            </ui:FilterOperationArgument.Operand>
+          </ui:FilterOperationArgument>
+        </scg:List>
+      </ui:FilterDataTable.Filters>
+      <ui:FilterDataTable.SelectColumns>
+        <scg:List x:TypeArguments="InArgument" Capacity="4">
+          <x:Null />
+        </scg:List>
+      </ui:FilterDataTable.SelectColumns>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:FilterDataTable>
+    <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" DataTable="[SummaryDataTable]" DisplayName="Write Range Workbook Summary" sap:VirtualizedContainerService.HintSize="1334,156" sap2010:WorkflowViewState.IdRef="WriteRange_5" SheetName="Sheet1" WorkbookPath="Summary.xlsx">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:WriteRange>
+    <ui:WriteRange AddHeaders="True" DataTable="[DetailedDataTable]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="1334,156" sap2010:WorkflowViewState.IdRef="WriteRange_3" SheetName="Sheet1" WorkbookPath="Test.xlsx">
+      <ui:WriteRange.StartingCell>
+        <InArgument x:TypeArguments="x:String">
+          <Literal x:TypeArguments="x:String" Value="" />
+        </InArgument>
+      </ui:WriteRange.StartingCell>
+    </ui:WriteRange>
+    <Assign sap:VirtualizedContainerService.HintSize="1334,123" sap2010:WorkflowViewState.IdRef="Assign_2">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[jsonString]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">[JSONConvert.SerializeObject(SummaryDataTable)]</InArgument>
+      </Assign.Value>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </Assign>
+    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="1334,131" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[jsonString]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </WriteLine>
+    <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="[textFilePath]" sap:VirtualizedContainerService.HintSize="1334,175" sap2010:WorkflowViewState.IdRef="WriteTextFile_1" Text="[jsonString]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:WriteTextFile>
+    <Assign sap:VirtualizedContainerService.HintSize="1334,123" sap2010:WorkflowViewState.IdRef="Assign_6">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[jsonString]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">[JSONConvert.SerializeObject(DetailedDataTable)]</InArgument>
+      </Assign.Value>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </Assign>
+    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="1334,131" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="[jsonString]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </WriteLine>
+    <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" Encoding="utf-8" FileName="DetailedJSON.txt" sap:VirtualizedContainerService.HintSize="1334,158" sap2010:WorkflowViewState.IdRef="WriteTextFile_2" Text="[jsonString]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:WriteTextFile>
+  </Sequence>
+</Activity>
